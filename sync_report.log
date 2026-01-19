@@ -120,3 +120,43 @@ AUTO-SYNC (CRON) : lun. 19 janv. 2026 15:19:01 CET
 --------------------------------------------------------
 coucou.txt           | COPIÉ A->B     | Version 10 > 9
 test.txt             | PROTÉGÉ       | Mise à jour A->B bloquée par protection
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 15:20:01 CET
+
+========================================================
+AUTO-SYNC (CRON) : lun. 19 janv. 2026 15:20:01 CET
+--------------------------------------------------------
+coucou.txt           | IGNORÉ         | Versions identiques (10)
+test.txt             | PROTÉGÉ       | Mise à jour A->B bloquée par protection
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 15:21:01 CET
+
+========================================================
+AUTO-SYNC (CRON) : lun. 19 janv. 2026 15:21:01 CET
+--------------------------------------------------------
+coucou.txt           | IGNORÉ         | Versions identiques (10)
+test.txt             | PROTÉGÉ       | Mise à jour A->B bloquée par protection
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 15:22:01 CET
+
+========================================================
+AUTO-SYNC (CRON) : lun. 19 janv. 2026 15:22:01 CET
+--------------------------------------------------------
+coucou.txt           | IGNORÉ         | Versions identiques (10)
+test.txt             | PROTÉGÉ       | Mise à jour A->B bloquée par protection
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 15:23:01 CET
+
+========================================================
+AUTO-SYNC (CRON) : lun. 19 janv. 2026 15:23:01 CET
+--------------------------------------------------------
+coucou.txt           | IGNORÉ         | Versions identiques (10)
+test.txt             | COPIÉ A->B     | Version 5 > 4
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 15:24:01 CET
+
+========================================================
+AUTO-SYNC (CRON) : lun. 19 janv. 2026 15:24:01 CET
+--------------------------------------------------------
+coucou.txt           | IGNORÉ         | Versions identiques (10)
+test.txt             | IGNORÉ         | Versions identiques (5)

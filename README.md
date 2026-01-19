@@ -57,3 +57,7 @@ L'objectif de ce projet est de mettre en place un script **Bash** permettant de 
         * **JOURNALISER** : "Conflit détecté", Justification : "Métadonnées absentes pour arbitrage"
     * **FIN SI**
 **FIN POUR**
+
+
+**Ligne de redirecction dans le crontab qui indique de répéter chaque minute de chaque jour**
+* * * * * /home/edouard/Documents/Cours\ B2/Scripting/TP/script.txt 
