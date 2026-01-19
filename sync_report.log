@@ -64,3 +64,7 @@ test.txt             | COPIÉ B->A     | Version 4 > 3
 Rapport de synchronisation du lun. 19 janv. 2026 14:10:13 CET
 coucou.txt           | IGNORÉ         | Versions identiques (6)
 test.txt             | IGNORÉ         | Versions identiques (4)
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 14:48:05 CET
+coucou.txt           | COPIÉ A->B     | Version 7 > 6
+test.txt             | IGNORÉ         | Versions identiques (4)
