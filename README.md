@@ -7,7 +7,7 @@ L'objectif de ce projet est de mettre en place un script **Bash** permettant de 
 * **Environnement A** : Répertoire contenant les fichiers sources/mis à jour.
 * **Environnement B** : Répertoire cible pour la synchronisation.
 * **`protected_files.txt`** : Fichier de configuration listant les fichiers protégés (non synchronisables).
-* **Fichiers `.meta`** : Fichiers optionnels contenant les versions, auteurs et checksums pour l'arbitrage.
+* **Fichiers `.meta`** : Fichiers contenant les versions, auteurs et checksums pour l'arbitrage.
 
 ## 📤 Sorties
 * **Synchronisation effective** : Les fichiers mis à jour dans les deux environnements.
