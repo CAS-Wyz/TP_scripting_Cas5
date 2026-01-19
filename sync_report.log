@@ -72,3 +72,11 @@ test.txt             | IGNORÉ         | Versions identiques (4)
 Rapport de synchronisation du lun. 19 janv. 2026 14:50:12 CET
 coucou.txt           | IGNORÉ         | Versions identiques (7)
 test.txt             | PROTÉGÉ       | Mise à jour A->B bloquée par protection
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 15:02:18 CET
+
+========================================================
+AUTO-SYNC (CRON) : lun. 19 janv. 2026 15:02:18 CET
+--------------------------------------------------------
+coucou.txt           | COPIÉ A->B     | Version 8 > 7
+test.txt             | PROTÉGÉ       | Mise à jour A->B bloquée par protection

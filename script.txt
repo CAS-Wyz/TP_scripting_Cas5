@@ -10,6 +10,14 @@ PROTECTED_FILE="protected_files.txt"
 echo "--------------------------------------------------------" >> "$LOG_FILE"
 echo "Rapport de synchronisation du $(date)" >> "$LOG_FILE"
 
+{
+   echo ""
+   echo "========================================================"
+   echo "AUTO-SYNC (CRON) : $(date)"
+   echo "--------------------------------------------------------"
+} >> "$LOG_FILE"
+
+
 # Fonction pour écrire dans le log
 log_decision() {
     local file="$1"
