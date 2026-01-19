@@ -1,0 +1,136 @@
+#!/bin/bash
+
+# --- CONFIGURATION ---
+ENV_A="./env_A"
+ENV_B="./env_B"
+LOG_FILE="./sync_report.log"
+PROTECTED_FILE="protected_files.txt"
+
+# Initialisation du log
+echo "--------------------------------------------------------" >> "$LOG_FILE"
+echo "Rapport de synchronisation du $(date)" >> "$LOG_FILE"
+
+# Fonction pour écrire dans le log
+log_decision() {
+    local file="$1"
+    local action="$2"
+    local reason="$3"
+    # Affichage propre avec alignement
+    printf "%-20s | %-15s | %s\n" "$file" "$action" "$reason" >> "$LOG_FILE"
+    echo "---------------------------------------------------"
+}
+
+# Fonction pour extraire la version du fichier .meta
+# Utilise awk pour chercher la ligne "version :" et prendre le 2ème champ
+get_version() {
+    local meta_path="$1"
+    if [ ! -f "$meta_path" ]; then
+        echo "MISSING"
+    else
+        # On cherche la ligne "version : X", on prend X, on nettoie les espaces
+        local val=$(grep "^version" "$meta_path" | awk -F ':' '{print $2}' | tr -d '[:space:]')
+        if [[ -z "$val" ]]; then
+            echo "INVALID"
+        else
+            echo "$val"
+        fi
+    fi
+}
+
+# Fonction pour vérifier si un fichier est protégé
+# Retourne 0 (Vrai) si protégé, 1 (Faux) sinon
+is_protected() {
+    local env_path="$1"
+    local filename="$2"
+    local list_path="$env_path/$PROTECTED_FILE"
+    
+    if [ -f "$list_path" ]; then
+        if grep -Fxq "$filename" "$list_path"; then
+            return 0 # Protégé
+        fi
+    fi
+    return 1 # Pas protégé
+}
+
+# --- 1. CONSTITUTION DE LA LISTE DES FICHIERS ---
+# On liste A et B, on trie, et on garde les noms uniques
+# On exclut les fichiers .meta, le fichier protected et les dossiers
+files_list=$(cat <(ls "$ENV_A") <(ls "$ENV_B") | sort | uniq | grep -v ".meta$" | grep -v "^$PROTECTED_FILE$")
+
+# --- 2. BOUCLE PRINCIPALE ---
+IFS=$'\n' # Pour gérer les espaces dans les noms de fichiers au cas où
+for file in $files_list; do
+    
+    path_a="$ENV_A/$file"
+    path_b="$ENV_B/$file"
+    meta_a="$ENV_A/$file.meta"
+    meta_b="$ENV_B/$file.meta"
+    
+    exists_in_a=false
+    exists_in_b=false
+    [ -f "$path_a" ] && exists_in_a=true
+    [ -f "$path_b" ] && exists_in_b=true
+
+    # --- CAS 1 : Présent uniquement dans A ---
+    if $exists_in_a && ! $exists_in_b; then
+        if is_protected "$ENV_B" "$file"; then
+            log_decision "$file" "IGNORÉ" "Fichier listé dans protected_files de B"
+        else
+            cp "$path_a" "$path_b" 2>/dev/null
+            # On essaie aussi de copier le meta s'il existe (bonnes pratiques, bien que non spécifié explicitement)
+            [ -f "$meta_a" ] && cp "$meta_a" "$meta_b" 2>/dev/null 
+            log_decision "$file" "COPIÉ A->B" "Nouveau fichier (Source A)"
+        fi
+        continue
+    fi
+
+    # --- CAS 2 : Présent uniquement dans B ---
+    if ! $exists_in_a && $exists_in_b; then
+        if is_protected "$ENV_A" "$file"; then
+            log_decision "$file" "IGNORÉ" "Fichier listé dans protected_files de A"
+        else
+            cp "$path_b" "$path_a" 2>/dev/null
+            [ -f "$meta_b" ] && cp "$meta_b" "$meta_a" 2>/dev/null
+            log_decision "$file" "COPIÉ B->A" "Nouveau fichier (Source B)"
+        fi
+        continue
+    fi
+
+    # --- CAS 3 : Présent des deux côtés (Comparaison META) ---
+    if $exists_in_a && $exists_in_b; then
+        
+        ver_a=$(get_version "$meta_a")
+        ver_b=$(get_version "$meta_b")
+
+        # Gestion des erreurs de métadonnées (Règle : "Si absents ou incomplets -> Conflit")
+        if [[ "$ver_a" == "MISSING" ]] || [[ "$ver_b" == "MISSING" ]] || \
+           [[ "$ver_a" == "INVALID" ]] || [[ "$ver_b" == "INVALID" ]]; then
+            log_decision "$file" "CONFLIT" "Fichier .meta manquant ou version illisible"
+            continue
+        fi
+
+        # Comparaison numérique
+        if [ "$ver_a" -gt "$ver_b" ]; then
+            if is_protected "$ENV_B" "$file"; then
+                log_decision "$file" "PROTÉGÉ" "Mise à jour A->B bloquée par protection"
+            else
+                cp "$path_a" "$path_b"
+                cp "$meta_a" "$meta_b" # Mise à jour du meta aussi
+                log_decision "$file" "COPIÉ A->B" "Version $ver_a > $ver_b"
+            fi
+        
+        elif [ "$ver_b" -gt "$ver_a" ]; then
+             if is_protected "$ENV_A" "$file"; then
+                log_decision "$file" "PROTÉGÉ" "Mise à jour B->A bloquée par protection"
+            else
+                cp "$path_b" "$path_a"
+                cp "$meta_b" "$meta_a"
+                log_decision "$file" "COPIÉ B->A" "Version $ver_b > $ver_a"
+            fi
+        
+        else
+            log_decision "$file" "IGNORÉ" "Versions identiques ($ver_a)"
+        fi
+    fi
+
+done

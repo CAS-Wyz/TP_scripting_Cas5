@@ -1,0 +1,66 @@
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:27:06 CET
+--------------------------------------------------------
+coucou.txt           | CONFLIT         | Fichier .meta manquant ou version illisible
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:28:21 CET
+coucou.txt           | CONFLIT         | Fichier .meta manquant ou version illisible
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:29:11 CET
+coucou.txt           | CONFLIT         | Fichier .meta manquant ou version illisible
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:40:11 CET
+coucou.txt           | CONFLIT         | Fichier .meta manquant ou version illisible
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:43:58 CET
+coucou.txt           | CONFLIT         | Fichier .meta manquant ou version illisible
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:44:37 CET
+coucou.txt           | CONFLIT         | Fichier .meta manquant ou version illisible
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:45:36 CET
+coucou.txt           | COPIÉ A->B     | Version 3 > 2
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:50:11 CET
+coucou.txt           | COPIÉ A->B     | Version 4 > 3
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:50:18 CET
+coucou.txt           | IGNORÉ         | Versions identiques (4)
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:52:37 CET
+coucou.txt           | IGNORÉ         | Versions identiques (4)
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:53:51 CET
+coucou.txt           | COPIÉ B->A     | Version 4 > 1
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 13:58:25 CET
+coucou.txt           | IGNORÉ         | Versions identiques (4)
+test.txt             | COPIÉ A->B     | Nouveau fichier (Source A)
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 14:01:09 CET
+coucou.txt           | COPIÉ B->A     | Version 5 > 4
+test.txt             | PROTÉGÉ       | Mise à jour B->A bloquée par protection
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 14:02:36 CET
+coucou.txt           | IGNORÉ         | Versions identiques (5)
+test.txt             | IGNORÉ         | Versions identiques (2)
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 14:04:19 CET
+coucou.txt           | IGNORÉ         | Versions identiques (5)
+test.txt             | IGNORÉ         | Versions identiques (2)
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 14:04:43 CET
+coucou.txt           | IGNORÉ         | Versions identiques (5)
+test.txt             | IGNORÉ         | Versions identiques (2)
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 14:05:52 CET
+coucou.txt           | COPIÉ B->A     | Version 6 > 5
+test.txt             | COPIÉ B->A     | Version 3 > 2
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 14:07:05 CET
+coucou.txt           | IGNORÉ         | Versions identiques (6)
+test.txt             | COPIÉ B->A     | Version 4 > 3
+--------------------------------------------------------
+Rapport de synchronisation du lun. 19 janv. 2026 14:10:13 CET
+coucou.txt           | IGNORÉ         | Versions identiques (6)
+test.txt             | IGNORÉ         | Versions identiques (4)
