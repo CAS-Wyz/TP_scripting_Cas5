@@ -1,0 +1,66 @@
+﻿
+=========================================================================================================
+--- SESSION : 01/20/2026 18:05:15 ---
+[2026-01-20 18:05:15] FICHIER                                  | STATUT                    | JUSTIFICATION
+[2026-01-20 18:05:15] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\nouveau_A.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:05:15] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\nouveau_B.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:05:15] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\rapport.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:05:15] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\systeme.conf | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:05:15] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\nouveau_A.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:05:15] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\nouveau_B.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:05:15] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\rapport.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:05:15] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\sync_log.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:05:16] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\systeme.conf | CONFLIT                   | Metadonnees (.meta) manquantes
+RESUME | Copies: 0 | Conflits: 9 | Proteges: 0 | Ignores: 0
+
+=========================================================================================================
+--- SESSION : 01/20/2026 18:07:58 ---
+[2026-01-20 18:07:58] FICHIER                                  | STATUT                    | JUSTIFICATION
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\nouveau_A.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\nouveau_B.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\rapport.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\systeme.conf | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\nouveau_A.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\nouveau_B.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\rapport.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\sync_log.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:07:58] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\systeme.conf | CONFLIT                   | Metadonnees (.meta) manquantes
+RESUME | Copies: 0 | Conflits: 9 | Proteges: 0 | Ignores: 0
+
+=========================================================================================================
+--- SESSION : 01/20/2026 18:08:04 ---
+[2026-01-20 18:08:04] FICHIER                                  | STATUT                    | JUSTIFICATION
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\nouveau_A.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\nouveau_B.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\rapport.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\systeme.conf | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\nouveau_A.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\nouveau_B.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\rapport.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\sync_log.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:08:04] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\systeme.conf | CONFLIT                   | Metadonnees (.meta) manquantes
+RESUME | Copies: 0 | Conflits: 9 | Proteges: 0 | Ignores: 0
+
+=========================================================================================================
+--- SESSION : 01/20/2026 18:09:46 ---
+[2026-01-20 18:09:46] FICHIER                                  | STATUT                    | JUSTIFICATION
+[2026-01-20 18:09:46] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\nouveau_A.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:09:46] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\nouveau_B.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:09:46] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\rapport.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:09:46] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_A\systeme.conf | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:09:46] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\nouveau_A.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:09:46] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\nouveau_B.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:09:46] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\rapport.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:09:47] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\sync_log.txt | CONFLIT                   | Metadonnees (.meta) manquantes
+[2026-01-20 18:09:47] C:\Users\barra\OneDrive - Emineo Education\Cours\Scripting\B2\TP_scripting_Cas5\Powershell\env_B\systeme.conf | CONFLIT                   | Metadonnees (.meta) manquantes
+RESUME | Copies: 0 | Conflits: 9 | Proteges: 0 | Ignores: 0
+
+=========================================================================================================
+--- SESSION : 01/20/2026 18:10:20 ---
+[2026-01-20 18:10:20] FICHIER                                  | STATUT                    | JUSTIFICATION
+[2026-01-20 18:10:20] nouveau_A.txt                            | IGNORE                    | Versions et contenus identiques
+[2026-01-20 18:10:20] nouveau_B.txt                            | IGNORE                    | Versions et contenus identiques
+[2026-01-20 18:10:20] rapport.txt                              | IGNORE                    | Versions et contenus identiques
+[2026-01-20 18:10:21] systeme.conf                             | IGNORE                    | Versions et contenus identiques
+[2026-01-20 18:10:21] sync_log.txt                             | COPIE B -> A              | Initialisation nouveau fichier
+RESUME | Copies: 1 | Conflits: 0 | Proteges: 0 | Ignores: 4

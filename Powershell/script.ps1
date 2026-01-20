@@ -1,7 +1,8 @@
 # --- Configuration des chemins ---
-$pathA = "C:\SyncTest\env_A"
-$pathB = "C:\SyncTest\env_B"
-$logFile = "C:\SyncTest\sync_log.txt"
+$scriptDir = Split-Path -Parent $MyInvocation.MyCommand.Path
+$pathA = Join-Path $scriptDir "env_A"
+$pathB = Join-Path $scriptDir "env_B"
+$logFile = Join-Path $scriptDir "env_B\sync_log.txt"
 
 $OutputEncoding = [System.Text.Encoding]::UTF8
 $stats = @{ Copies = 0; Conflits = 0; Proteges = 0; Ignores = 0 }
