@@ -10,8 +10,6 @@ LOG_FILE="$BASE_DIR/sync_report.log"
 PROTECTED_FILE="protected_files.txt"
 
 # Initialisation du log
-echo "--------------------------------------------------------" >> "$LOG_FILE"
-echo "Rapport de synchronisation du $(date)" >> "$LOG_FILE"
 
 {
    echo ""
