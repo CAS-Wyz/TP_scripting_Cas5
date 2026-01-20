@@ -63,4 +63,4 @@ FIN POUR
 
 
 **Ligne de redirecction dans le crontab qui indique de répéter chaque minute de chaque jour**
-* * * * * /home/edouard/Documents/Cours\ B2/Scripting/TP/script.txt 
+"* * * * * /home/edouard/Documents/Cours\ B2/Scripting/TP/script.txt" 
