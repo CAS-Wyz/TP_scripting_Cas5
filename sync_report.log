@@ -232,3 +232,20 @@ AUTO-SYNC (CRON) : lun. 19 janv. 2026 15:33:01 CET
 --------------------------------------------------------
 coucou.txt           | IGNORÉ         | Versions identiques (10)
 test.txt             | IGNORÉ         | Versions identiques (5)
+--------------------------------------------------------
+Rapport de synchronisation du mar. 20 janv. 2026 09:07:01 CET
+
+========================================================
+AUTO-SYNC (CRON) : mar. 20 janv. 2026 09:07:01 CET
+--------------------------------------------------------
+coucou.txt           | IGNORÉ         | Versions identiques (10)
+protected_files.txt.save | COPIÉ A->B     | Nouveau fichier (Source A)
+test.txt             | IGNORÉ         | Versions identiques (5)
+--------------------------------------------------------
+Rapport de synchronisation du mar. 20 janv. 2026 09:08:01 CET
+
+========================================================
+AUTO-SYNC (CRON) : mar. 20 janv. 2026 09:08:01 CET
+--------------------------------------------------------
+coucou.txt           | IGNORÉ         | Versions identiques (10)
+test.txt             | IGNORÉ         | Versions identiques (5)
